@@ -1,0 +1,32 @@
+#cart {
+    padding: 20px;
+    background-color: #f4f3f0;
+}
+
+#cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-items div {
+    margin-bottom: 20px;
+}
+
+#cart-total {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#checkout-btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#checkout-btn:hover {
+    background-color: #FF4500;
+}

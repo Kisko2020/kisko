@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Carmine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+    <body>
+       
+        <header>
+            <div class="logo">
+                <img src="images/pizzacarmine,sk-logo_removed background.jpeg" alt="Pizza Carmine Logo">
+            </div>
+            <nav>
+            <ul>
+                <li><a href="#contact">Kontakt</a></li>
+            <li><a href="Cart/cart.html"><i class="fas fa-shopping-cart"></i>Košík</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Pravá Neapólska Pizza, Podľa Tradičnej Receptúry!</h1>
+            <a href="#menu" class="order-btn">Pozrieť Menu</a>
+        </div>
+    </section>
+
+   
+    <section id="menu" class="menu-section container">
+        <h2>Menu</h2>
+        
+        <div class="menu-filter">
+            <button class="filter-btn active" onclick="filterMenu('all')">Všetko</button>
+            <button class="filter-btn" onclick="filterMenu('pizza')">Pizza</button>
+            <button class="filter-btn" onclick="filterMenu('saltimbocca')">Saltimbocca</button>
+            <button class="filter-btn" onclick="filterMenu('pizza-sandwich')">Pizza Sandwich</button> <!-- New Button -->
+        </div>
+    
+
+        <div class="menu-grid">
+         
+            <div class="menu-item pizza">
+                <img src="images/IMGL0005 copy.png" alt="Pizza Margherita" class="product-image">
+                <h3>MARGHERITA di BUFALA</h3>
+                <p>Paradajka, mozzarella, bazalka /1,7/</p>
+                <span class="price">8,00€</span>
+                <button onclick="addToCart('MARGHERITA di BUFALA', 8.00)" class="order-btn">Pridať do košíka</button>
+</div>
+            <div class="menu-item pizza">
+                <img src="images/IMGL0014 copy.png" alt="Pizza Diavola" class="product-image">
+                <h3>DIAVOLA</h3>
+                <p>Paradajka, mozzarella, pikantná saláma /1,7/</p>
+                <span class="price">9,00€</span>
+                <button onclick="addToCart('DIAVOLA', 9.00)" class="order-btn">Pridať do košíka</button>
+</div>
+            <div class="menu-item pizza">
+                <img src="images/IMGL0021 copy.png" alt="Pizza Ortolana" class="product-image">
+                <h3>ORTOLANA</h3>
+                <p>Mozzarella, cuketa, paradajky cherry, baklažán, bazalka /1,7/</p>
+                <span class="price">10,00€</span>
+                <button onclick="addToCart('ORTOLANA', 10.00)" class="order-btn">Pridať do košíka</button>
+            </div>
+            <div class="menu-item pizza">
+                <img src="images/IMGL0036 copy.png" alt="Pizza Appetitosa" class="product-image">
+                <h3>APPETITOSA</h3>
+                <p>Syr provola, žlté cherry paradaj, slanina, baklažány, parmezán, bazalka /1,7/</p>
+                <span class="price">10,00€</span>
+                <button onclick="addToCart('APPETITOSA', 10.00)" class="order-btn">Pridať do košíka</button>
+</div>
+            <div class="menu-item pizza">
+                <img src="images/IMGL0047 copy.png" alt="Pizza Classica" class="product-image">
+                <h3>CLASSICA</h3>
+                <p>Paradajka, mozzarella, huby, šunka /1,7/</p>
+                <span class="price">10,00€</span>
+                <button onclick="addToCart('CLASSICA', 10.00)" class="order-btn">Pridať do košíka</button>
+</div>
+            <div class="menu-item pizza">
+                <img src="images/IMGL0054 copy.png" alt="Pizza Quatro Formaggi" class="product-image">
+                <h3>QUATRO FORMAGGI</h3>
+                <p>Mozzarella, Pecorino, Gorgonzola, Grana Padano /1,7/</p>
+                <span class="price">10,00€</span>
+                <button onclick="addToCart('QUATRO FORMAGGI', 10.00)" class="order-btn">Pridať do košíka</button>
+</div>
+            <div class="menu-item pizza">
+                <img src="images/IMGL0062 copy.png" alt="Pizza Sorento" class="product-image">
+                <h3>SORRENTO</h3>
+                <p>Mozzarella, pistáciové pesto, DOP mortadella /1,7,8/</p>
+                <span class="price">11,50€</span>
+                <button onclick="addToCart('SORRENTO', 11.50)" class="order-btn">Pridať do košíka</button>
+</div>
+            <div class="menu-item pizza">
+                <img src="images/IMGL0070 copy.png" alt="Pizza Miss Italia" class="product-image">
+                <h3>MISS ITALIA</h3>
+                <p>Paradajka, mozzarella, prosciutto Parmská šunka, cherry paradajky, rukola, Grana Padano /1,7/</p>
+                <span class="price">11,50€</span>
+                <button onclick="addToCart('MISS ITALIA', 11.50)" class="order-btn">Pridať do košíka</button>
+            </div>
+            <div class="menu-item pizza">
+                <img src="images/IMGL0078 copy.png" alt="Pizza Carmine" class="product-image">
+                <h3>CARMINE</h3>
+                <p>Paradajka, mozzarella, prosciutto Parmská šunka, cherry paradajky, rukola, Grana Padano /1,7/</p>
+                <span class="price">11,00€</span>
+                <button onclick="addToCart('CARMINE', 11.00)" class="order-btn">Pridať do košíka</button>
+</div>
+            <div class="menu-item pizza">
+                <img src="images/IMGL0086 copy.png" alt="Pizza Sorrento con Burratas" class="product-image">
+                <h3>SORRENTO CON BURRATAS</h3>
+                <p>Mozzarella, pistáciové pesto, DOP mortadella, burrata /1,7,8/</p>
+                <span class="price">13,50€</span>
+                <button onclick="addToCart('SORRENTO CON BURRATAS', 13.50)" class="order-btn">Pridať do košíka</button>
+            </div>
+   
+    <div class="menu-item saltimbocca">
+        <img src="images/IMGL0108 copy.png" alt="Saltimbocca Sorrentino" class="product-image">
+        <h3>SORRENTINO</h3>
+        <p>Syr provola, prosciutto</p>
+        <span class="price">9,50€</span>
+        <button onclick="addToCart('SORRENTINO', 9.50)" class="order-btn">Pridať do košíka</button>
+</div>
+    <div class="menu-item saltimbocca">
+        <img src="images/IMGL0108 copy.png" alt="Saltimbocca Mamma Mia" class="product-image">
+        <h3>MAMMA MIA</h3>
+        <p>Syr provola, slanina, pečené baklažány</p>
+        <span class="price">9,50€</span>
+        <button onclick="addToCart('MAMMA MIA', 9.50)" class="order-btn">Pridať do košíka</button>
+</div>
+    <div class="menu-item saltimbocca">
+        <img src="images/IMGL0108 copy.png" alt="Saltimbocca Vespa" class="product-image">
+        <h3>VESPA</h3>
+        <p>Syr provola, pikantná saláma, hríby</p>
+        <span class="price">9,50€</span>
+        <button onclick="addToCart('VESPA', 9.50)" class="order-btn">Pridať do košíka</button>
+    </div>
+    <div class="menu-item saltimbocca">
+        <img src="images/IMGL0108 copy.png" alt="Saltimbocca Bella Vita" class="product-image">
+        <h3>BELLA VITA</h3>
+        <p>Porchetta, syr provola, pečené zemiaky a baklažány</p>
+        <span class="price">9,50€</span>
+        <button onclick="addToCart('BELLA VITA', 9.50)" class="order-btn">Pridať do košíka</button>
+    </div>
+    <div class="menu-item saltimbocca">
+        <img src="images/IMGL0108 copy.png" alt="Saltimbocca Pasquale" class="product-image">
+        <h3>PASQUALE</h3>
+        <p>Syr provola, brokolica a klobása</p>
+        <span class="price">9,50€</span>
+        <button onclick="addToCart('PASQUALE', 9.50)" class="order-btn">Pridať do košíka</button>
+</div>
+    <div class="menu-item saltimbocca">
+        <img src="images/IMGL0108 copy.png" alt="Saltimbocca Italia" class="product-image">
+        <h3>ITALIA</h3>
+        <p>Mozzarella, prosciutto, cherry paradajky, rukola</p>
+        <span class="price">9,50€</span>
+        <button onclick="addToCart('ITALIA', 9.50)" class="order-btn">Pridať do košíka</button>
+</div>
+    
+    <div class="menu-item pizza-sandwich">
+        <img src="images/pizza-sandwich.png" alt="Pizza Sandwich" class="product-image">
+        <h3>PIZZA SANDWICH</h3>
+        <p>Pizza dough with mozzarella and prosciutto</p>
+        <span class="price">7,50€</span>
+        <button onclick="addToCart('PIZZA SANDWICH', 7.50)" class="order-btn">Pridať do košíka</button>
+</div>
+</div>
+</section>
+
+
+ <section class="about-us">
+    <div class="container">
+        <h2>O Nás</h2>
+        <div class="about-row">
+            <div class="about-text">
+                <p>
+                    V Pizzeria Carmine veríme v pravú chuť Neapólskej pizze. Naše jedlá sú pripravené podľa tradičnej talianskej receptúry, s použitím tých najlepších surovín, aby sme vám priniesli skutočný zážitok.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="images/BE685257-D107-4EAA-9BD6-D3314409B342.jpg" alt="Pizza in the oven" class="about-img">
+            </div>
+        </div>
+
+        <div class="about-row reverse">
+            <div class="about-text">
+                <p>
+                    Navštívte nás a vychutnajte si pravú Neapólsku pizzu priamo z pece, alebo si objednajte a my vám ju prinesieme až domov!
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="images/IMG_3329.JPG" alt="Neapolitan pizza" class="about-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="contact-section">
+        <h2>Kontaktujte nás</h2>
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3>Adresové údaje</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Gorkého 2, 955 01 Topoľčany</p>
+                <p><i class="fas fa-phone-alt"></i> +421904998666</p>
+                <h4>Otváracie hodiny:</h4>
+                <p>Pondelok - Piatok : 14:00 - 22:00</p>
+                <p>Sobota - Nedeľa : 16:00 - 21:00</p>
+                <div class="social-icons">
+                    <li><a href="https://www.facebook.com/p/Carminepizzanapoli-61552519511349/"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="https://www.instagram.com/carmine.pizzanapoli?igsh=MWxwdTBmdTZxa3Fjbg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i>Instagram</a></li>
+                </div>
+            </div>
+           
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.4556090733033!2d18.17620477633769!3d48.55764705510656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714fc21af1d39ad%3A0xf3786a16527e92dd!2sGork%C3%A9ho%202%2C%20955%2001%20Topo%C4%BE%C4%8Dany%2C%20Slovakia!5e0!3m2!1sen!2sus!4v1694953459356!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+<footer class="animate fade-in">
+    <div class="footer-links">
+        <a href="terms.html">Zmluvné podmienky</a> |
+        <a href="privacy.html">Ochrana osobných údajov</a> |
+        <a href="cookies.html">Nastavenia súborov cookie</a> |
+    </div>
+    <p>&copy; 2024 Pizza Carmine. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
